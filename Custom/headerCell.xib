@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="headerView" preservesSuperviewLayoutMargins="YES" id="2DU-Px-Gue" customClass="headerView" customModule="GrubityIntern" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TNQ-wF-U8G">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="122"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKN-qS-pDM" userLabel="Time">
+                            <rect key="frame" x="12.000000000000004" y="83.666666666666671" width="52.333333333333343" height="26.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yam-ba-X52" userLabel="Status">
+                            <rect key="frame" x="12" y="54.666666666666664" width="35.333333333333336" height="16.999999999999993"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="2WJ-vA-u3g">
+                            <rect key="frame" x="12" y="16" width="13" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="13" id="S1G-DX-qcB"/>
+                                <constraint firstAttribute="width" constant="13" id="qCC-jm-fca"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dOZ-jN-C1u">
+                            <rect key="frame" x="33" y="8.0000000000000018" width="143" height="27.666666666666671"/>
+                            <state key="normal">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="Turn on your location">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="14" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="AKN-qS-pDM" firstAttribute="top" secondItem="yam-ba-X52" secondAttribute="bottom" constant="12" id="DyJ-un-mPp"/>
+                        <constraint firstAttribute="bottom" secondItem="AKN-qS-pDM" secondAttribute="bottom" constant="12" id="KIz-7B-iEe"/>
+                        <constraint firstItem="AKN-qS-pDM" firstAttribute="leading" secondItem="TNQ-wF-U8G" secondAttribute="leading" constant="12" id="L5h-4m-NIf"/>
+                        <constraint firstItem="dOZ-jN-C1u" firstAttribute="top" secondItem="TNQ-wF-U8G" secondAttribute="top" constant="8" id="O6N-0R-ph1"/>
+                        <constraint firstItem="yam-ba-X52" firstAttribute="leading" secondItem="TNQ-wF-U8G" secondAttribute="leading" constant="12" id="ZRx-C3-aDn"/>
+                        <constraint firstItem="2WJ-vA-u3g" firstAttribute="leading" secondItem="TNQ-wF-U8G" secondAttribute="leading" constant="12" id="azk-yU-ArW"/>
+                        <constraint firstItem="dOZ-jN-C1u" firstAttribute="leading" secondItem="2WJ-vA-u3g" secondAttribute="trailing" constant="8" id="mfp-qM-HWK"/>
+                        <constraint firstItem="2WJ-vA-u3g" firstAttribute="top" secondItem="TNQ-wF-U8G" secondAttribute="top" constant="16" id="n3Q-Cl-uOE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TNQ-wF-U8G" secondAttribute="trailing" id="4JJ-J7-GN1"/>
+                <constraint firstItem="TNQ-wF-U8G" firstAttribute="bottom" secondItem="y7S-mq-Je8" secondAttribute="bottom" id="gSr-kR-SaV"/>
+                <constraint firstItem="TNQ-wF-U8G" firstAttribute="top" secondItem="y7S-mq-Je8" secondAttribute="top" id="mZw-ls-RXz"/>
+                <constraint firstItem="TNQ-wF-U8G" firstAttribute="leading" secondItem="2DU-Px-Gue" secondAttribute="leading" id="qwb-BW-JUh"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="y7S-mq-Je8"/>
+            <connections>
+                <outlet property="Button" destination="dOZ-jN-C1u" id="PtJ-0D-Kjn"/>
+                <outlet property="ImageView" destination="2WJ-vA-u3g" id="rpa-AM-5iX"/>
+                <outlet property="Status" destination="yam-ba-X52" id="K6G-aI-kyT"/>
+                <outlet property="Time" destination="AKN-qS-pDM" id="HbB-bA-1hz"/>
+            </connections>
+            <point key="canvasLocation" x="742.02898550724649" y="-827.44565217391312"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="location" width="13" height="13"/>
+    </resources>
+</document>
