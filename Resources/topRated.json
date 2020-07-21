@@ -1,0 +1,20 @@
+{
+    "topRated": [
+        {
+            "Title": "Mouse Cake",
+            "Location": "Lien Chieu, Da Nang",
+            "Name": "Harley",
+            "Price": "$84",
+            "Background": "topRated0",
+            "Avatar": "topRated0"
+        },
+        {
+            "Title": "Cat Cake",
+            "Location": "Hai Chau, Da Nang",
+            "Name": "Doctor Strange",
+            "Price": "$105",
+            "Background": "topRated1",
+            "Avatar": "topRated1"
+        }
+    ]
+}

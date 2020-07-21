@@ -1,0 +1,801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E147FB2E2357053C00922FE5 /* searchs.json in Resources */ = {isa = PBXBuildFile; fileRef = E147FB2D2357053C00922FE5 /* searchs.json */; };
+		E14CE8692328F30C00D2B44E /* headerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14CE8682328F30C00D2B44E /* headerCell.xib */; };
+		E15064112338D189001BFBAD /* weekend.json in Resources */ = {isa = PBXBuildFile; fileRef = E15064102338D189001BFBAD /* weekend.json */; };
+		E161CFB52303ABFA00EE7045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E161CFB32303ABFA00EE7045 /* Main.storyboard */; };
+		E161CFB72303ABFC00EE7045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E161CFB62303ABFC00EE7045 /* Assets.xcassets */; };
+		E161CFBA2303ABFC00EE7045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E161CFB82303ABFC00EE7045 /* LaunchScreen.storyboard */; };
+		E161CFC52303ABFC00EE7045 /* GrubityInternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E161CFC42303ABFC00EE7045 /* GrubityInternTests.swift */; };
+		E161CFD02303ABFC00EE7045 /* GrubityInternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E161CFCF2303ABFC00EE7045 /* GrubityInternUITests.swift */; };
+		E16C96A024C341CA00C9E44D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E9A7C924BD98B800098E54 /* Post.swift */; };
+		E16C96A124C341CA00C9E44D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E9A7CB24BD9EF100098E54 /* User.swift */; };
+		E16C96A224C341CA00C9E44D /* todayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F97A1A232172CF0088DC3E /* todayData.swift */; };
+		E16C96A324C341CA00C9E44D /* CollectionCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB718A2334C07600E1FC46 /* CollectionCellData.swift */; };
+		E16C96A424C341CA00C9E44D /* weekendData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15064122338D215001BFBAD /* weekendData.swift */; };
+		E16C96A524C341CA00C9E44D /* tomorrowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D7ACEF234704910025AFD9 /* tomorrowData.swift */; };
+		E16C96A624C341CA00C9E44D /* searchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E147FB2F2357055100922FE5 /* searchData.swift */; };
+		E16C96A724C341CA00C9E44D /* CellCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E150640E2338CB35001BFBAD /* CellCollectionView.swift */; };
+		E16C96A824C341CA00C9E44D /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB718C2334DAB700E1FC46 /* CustomCollectionViewCell.swift */; };
+		E16C96A924C341CA00C9E44D /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A02762322223600AE5B21 /* CustomCell.swift */; };
+		E16C96AA24C341CA00C9E44D /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1750045231FA7E900DE1D26 /* RatingControl.swift */; };
+		E16C96AB24C341CA00C9E44D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11600B12313C99A00FFC320 /* CustomTextField.swift */; };
+		E16C96AC24C341CA00C9E44D /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E161E2A5230B053100FB4B64 /* CustomView.swift */; };
+		E16C96AD24C341CA00C9E44D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16432D923055C9A00742E12 /* RoundButton.swift */; };
+		E16C96AE24C341CA00C9E44D /* headerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE86C2328F42000D2B44E /* headerView.swift */; };
+		E16C96AF24C341CA00C9E44D /* TomorrowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1006A6923503F0500F809E6 /* TomorrowCell.swift */; };
+		E16C96B024C341CA00C9E44D /* TomorrowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1006A6C2350421900F809E6 /* TomorrowTableViewCell.swift */; };
+		E16C96B124C341CA00C9E44D /* CelebCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1308B1723548240007605D2 /* CelebCollectionViewCell.swift */; };
+		E16C96B224C341CA00C9E44D /* CelebTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1308B192354874F007605D2 /* CelebTableViewCell.swift */; };
+		E16C96B324C341CA00C9E44D /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E147FB3123572EF200922FE5 /* SearchTableViewCell.swift */; };
+		E16C96B424C341CA00C9E44D /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E0CED4231E5AE000AF39F3 /* NewsFeedViewController.swift */; };
+		E16C96B524C341CA00C9E44D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E161CFB12303ABFA00EE7045 /* SignInViewController.swift */; };
+		E16C96B624C341CA00C9E44D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E148CCA723191B9E00B463DD /* WelcomeViewController.swift */; };
+		E16C96B724C341CA00C9E44D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E147FB2B2357026500922FE5 /* SearchViewController.swift */; };
+		E16C96B824C341CA00C9E44D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E9A7D224BE0B7600098E54 /* SignUpViewController.swift */; };
+		E16C96B924C341CA00C9E44D /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E177DF5724C0573600215A6D /* TabbarViewController.swift */; };
+		E16C96BA24C3423200C9E44D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E161CFAF2303ABFA00EE7045 /* AppDelegate.swift */; };
+		E16C96BE24C3576100C9E44D /* OnlineUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16C96BD24C3576100C9E44D /* OnlineUserTableViewController.swift */; };
+		E18A027123221DB600AE5B21 /* today.json in Resources */ = {isa = PBXBuildFile; fileRef = E18A027023221DB600AE5B21 /* today.json */; };
+		E1BB71892334BA7D00E1FC46 /* topRated.json in Resources */ = {isa = PBXBuildFile; fileRef = E1BB71882334BA7D00E1FC46 /* topRated.json */; };
+		E1D7ACEE2346FF760025AFD9 /* tomorrow.json in Resources */ = {isa = PBXBuildFile; fileRef = E1D7ACED2346FF760025AFD9 /* tomorrow.json */; };
+		E1E9A7CE24BDA07E00098E54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1E9A7CD24BDA07E00098E54 /* GoogleService-Info.plist */; };
+		EE50BA55713576FE63F1A90E /* libPods-GrubityIntern.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CFC6E22C6A01BF74D3FCDB /* libPods-GrubityIntern.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E161CFC12303ABFC00EE7045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E161CFA42303ABFA00EE7045 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E161CFAB2303ABFA00EE7045;
+			remoteInfo = GrubityIntern;
+		};
+		E161CFCC2303ABFC00EE7045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E161CFA42303ABFA00EE7045 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E161CFAB2303ABFA00EE7045;
+			remoteInfo = GrubityIntern;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26CFC6E22C6A01BF74D3FCDB /* libPods-GrubityIntern.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GrubityIntern.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D63DDD21EA72A12A96ACFD /* Pods-GrubityIntern.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrubityIntern.debug.xcconfig"; path = "Target Support Files/Pods-GrubityIntern/Pods-GrubityIntern.debug.xcconfig"; sourceTree = "<group>"; };
+		BF88353E9FD8B3526DA3B14C /* Pods-GrubityIntern.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrubityIntern.release.xcconfig"; path = "Target Support Files/Pods-GrubityIntern/Pods-GrubityIntern.release.xcconfig"; sourceTree = "<group>"; };
+		E1006A6923503F0500F809E6 /* TomorrowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowCell.swift; sourceTree = "<group>"; };
+		E1006A6C2350421900F809E6 /* TomorrowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowTableViewCell.swift; sourceTree = "<group>"; };
+		E11600B12313C99A00FFC320 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		E1308B1723548240007605D2 /* CelebCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebCollectionViewCell.swift; sourceTree = "<group>"; };
+		E1308B192354874F007605D2 /* CelebTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebTableViewCell.swift; sourceTree = "<group>"; };
+		E147FB2B2357026500922FE5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E147FB2D2357053C00922FE5 /* searchs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchs.json; sourceTree = "<group>"; };
+		E147FB2F2357055100922FE5 /* searchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchData.swift; sourceTree = "<group>"; };
+		E147FB3123572EF200922FE5 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		E148CCA723191B9E00B463DD /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E14CE8682328F30C00D2B44E /* headerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = headerCell.xib; sourceTree = "<group>"; };
+		E14CE86C2328F42000D2B44E /* headerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headerView.swift; sourceTree = "<group>"; };
+		E150640E2338CB35001BFBAD /* CellCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionView.swift; sourceTree = "<group>"; };
+		E15064102338D189001BFBAD /* weekend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weekend.json; sourceTree = "<group>"; };
+		E15064122338D215001BFBAD /* weekendData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weekendData.swift; sourceTree = "<group>"; };
+		E161CFAC2303ABFA00EE7045 /* GrubityIntern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrubityIntern.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E161CFAF2303ABFA00EE7045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E161CFB12303ABFA00EE7045 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E161CFB42303ABFA00EE7045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E161CFB62303ABFC00EE7045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E161CFB92303ABFC00EE7045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E161CFBB2303ABFC00EE7045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E161CFC02303ABFC00EE7045 /* GrubityInternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrubityInternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E161CFC42303ABFC00EE7045 /* GrubityInternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrubityInternTests.swift; sourceTree = "<group>"; };
+		E161CFC62303ABFC00EE7045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E161CFCB2303ABFC00EE7045 /* GrubityInternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrubityInternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E161CFCF2303ABFC00EE7045 /* GrubityInternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrubityInternUITests.swift; sourceTree = "<group>"; };
+		E161CFD12303ABFC00EE7045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E161E2A5230B053100FB4B64 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		E16432D923055C9A00742E12 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		E16C96BD24C3576100C9E44D /* OnlineUserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineUserTableViewController.swift; sourceTree = "<group>"; };
+		E1750045231FA7E900DE1D26 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		E177DF5724C0573600215A6D /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		E18A027023221DB600AE5B21 /* today.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = today.json; sourceTree = "<group>"; };
+		E18A02762322223600AE5B21 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		E1BB71882334BA7D00E1FC46 /* topRated.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topRated.json; sourceTree = "<group>"; };
+		E1BB718A2334C07600E1FC46 /* CollectionCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellData.swift; sourceTree = "<group>"; };
+		E1BB718C2334DAB700E1FC46 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		E1D7ACED2346FF760025AFD9 /* tomorrow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tomorrow.json; sourceTree = "<group>"; };
+		E1D7ACEF234704910025AFD9 /* tomorrowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tomorrowData.swift; sourceTree = "<group>"; };
+		E1E0CED4231E5AE000AF39F3 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
+		E1E9A7C924BD98B800098E54 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E1E9A7CB24BD9EF100098E54 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E1E9A7CD24BDA07E00098E54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E1E9A7CF24BDA53F00098E54 /* GrubityIntern.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GrubityIntern.entitlements; sourceTree = "<group>"; };
+		E1E9A7D224BE0B7600098E54 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E1F97A1A232172CF0088DC3E /* todayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E161CFA92303ABFA00EE7045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE50BA55713576FE63F1A90E /* libPods-GrubityIntern.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E161CFBD2303ABFC00EE7045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E161CFC82303ABFC00EE7045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68E640DC4694BBF52DC97EF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57D63DDD21EA72A12A96ACFD /* Pods-GrubityIntern.debug.xcconfig */,
+				BF88353E9FD8B3526DA3B14C /* Pods-GrubityIntern.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DFE7A9CC656311F93240C1D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26CFC6E22C6A01BF74D3FCDB /* libPods-GrubityIntern.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E161CFA32303ABFA00EE7045 = {
+			isa = PBXGroup;
+			children = (
+				E1E9A7C824BD989600098E54 /* DTO */,
+				E1F97A1323216BC40088DC3E /* Resources */,
+				E16395B523083DBC002382EF /* Custom */,
+				E161CFAE2303ABFA00EE7045 /* GrubityIntern */,
+				E161CFC32303ABFC00EE7045 /* GrubityInternTests */,
+				E161CFCE2303ABFC00EE7045 /* GrubityInternUITests */,
+				E161CFAD2303ABFA00EE7045 /* Products */,
+				68E640DC4694BBF52DC97EF4 /* Pods */,
+				DFE7A9CC656311F93240C1D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E161CFAD2303ABFA00EE7045 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E161CFAC2303ABFA00EE7045 /* GrubityIntern.app */,
+				E161CFC02303ABFC00EE7045 /* GrubityInternTests.xctest */,
+				E161CFCB2303ABFC00EE7045 /* GrubityInternUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E161CFAE2303ABFA00EE7045 /* GrubityIntern */ = {
+			isa = PBXGroup;
+			children = (
+				E1E9A7CF24BDA53F00098E54 /* GrubityIntern.entitlements */,
+				E1E9A7CD24BDA07E00098E54 /* GoogleService-Info.plist */,
+				E161CFAF2303ABFA00EE7045 /* AppDelegate.swift */,
+				E161CFB62303ABFC00EE7045 /* Assets.xcassets */,
+				E161CFB32303ABFA00EE7045 /* Main.storyboard */,
+				E161CFBB2303ABFC00EE7045 /* Info.plist */,
+				E161CFB82303ABFC00EE7045 /* LaunchScreen.storyboard */,
+				E1E0CED4231E5AE000AF39F3 /* NewsFeedViewController.swift */,
+				E161CFB12303ABFA00EE7045 /* SignInViewController.swift */,
+				E148CCA723191B9E00B463DD /* WelcomeViewController.swift */,
+				E147FB2B2357026500922FE5 /* SearchViewController.swift */,
+				E1E9A7D224BE0B7600098E54 /* SignUpViewController.swift */,
+				E177DF5724C0573600215A6D /* TabbarViewController.swift */,
+				E16C96BD24C3576100C9E44D /* OnlineUserTableViewController.swift */,
+			);
+			path = GrubityIntern;
+			sourceTree = "<group>";
+		};
+		E161CFC32303ABFC00EE7045 /* GrubityInternTests */ = {
+			isa = PBXGroup;
+			children = (
+				E161CFC42303ABFC00EE7045 /* GrubityInternTests.swift */,
+				E161CFC62303ABFC00EE7045 /* Info.plist */,
+			);
+			path = GrubityInternTests;
+			sourceTree = "<group>";
+		};
+		E161CFCE2303ABFC00EE7045 /* GrubityInternUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E161CFCF2303ABFC00EE7045 /* GrubityInternUITests.swift */,
+				E161CFD12303ABFC00EE7045 /* Info.plist */,
+			);
+			path = GrubityInternUITests;
+			sourceTree = "<group>";
+		};
+		E16395B523083DBC002382EF /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E150640E2338CB35001BFBAD /* CellCollectionView.swift */,
+				E1BB718C2334DAB700E1FC46 /* CustomCollectionViewCell.swift */,
+				E18A02762322223600AE5B21 /* CustomCell.swift */,
+				E1750045231FA7E900DE1D26 /* RatingControl.swift */,
+				E11600B12313C99A00FFC320 /* CustomTextField.swift */,
+				E161E2A5230B053100FB4B64 /* CustomView.swift */,
+				E16432D923055C9A00742E12 /* RoundButton.swift */,
+				E14CE86C2328F42000D2B44E /* headerView.swift */,
+				E14CE8682328F30C00D2B44E /* headerCell.xib */,
+				E1006A6923503F0500F809E6 /* TomorrowCell.swift */,
+				E1006A6C2350421900F809E6 /* TomorrowTableViewCell.swift */,
+				E1308B1723548240007605D2 /* CelebCollectionViewCell.swift */,
+				E1308B192354874F007605D2 /* CelebTableViewCell.swift */,
+				E147FB3123572EF200922FE5 /* SearchTableViewCell.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		E1E9A7C824BD989600098E54 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				E1E9A7C924BD98B800098E54 /* Post.swift */,
+				E1E9A7CB24BD9EF100098E54 /* User.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		E1F97A1323216BC40088DC3E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E147FB2D2357053C00922FE5 /* searchs.json */,
+				E1D7ACED2346FF760025AFD9 /* tomorrow.json */,
+				E15064102338D189001BFBAD /* weekend.json */,
+				E1BB71882334BA7D00E1FC46 /* topRated.json */,
+				E18A027023221DB600AE5B21 /* today.json */,
+				E1F97A1A232172CF0088DC3E /* todayData.swift */,
+				E1BB718A2334C07600E1FC46 /* CollectionCellData.swift */,
+				E15064122338D215001BFBAD /* weekendData.swift */,
+				E1D7ACEF234704910025AFD9 /* tomorrowData.swift */,
+				E147FB2F2357055100922FE5 /* searchData.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E161CFAB2303ABFA00EE7045 /* GrubityIntern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E161CFD42303ABFC00EE7045 /* Build configuration list for PBXNativeTarget "GrubityIntern" */;
+			buildPhases = (
+				FABBA81E00886034A86646A9 /* [CP] Check Pods Manifest.lock */,
+				E161CFA92303ABFA00EE7045 /* Frameworks */,
+				E161CFAA2303ABFA00EE7045 /* Resources */,
+				E16C969F24C3417300C9E44D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrubityIntern;
+			productName = GrubityIntern;
+			productReference = E161CFAC2303ABFA00EE7045 /* GrubityIntern.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E161CFBF2303ABFC00EE7045 /* GrubityInternTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E161CFD72303ABFC00EE7045 /* Build configuration list for PBXNativeTarget "GrubityInternTests" */;
+			buildPhases = (
+				E161CFBC2303ABFC00EE7045 /* Sources */,
+				E161CFBD2303ABFC00EE7045 /* Frameworks */,
+				E161CFBE2303ABFC00EE7045 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E161CFC22303ABFC00EE7045 /* PBXTargetDependency */,
+			);
+			name = GrubityInternTests;
+			productName = GrubityInternTests;
+			productReference = E161CFC02303ABFC00EE7045 /* GrubityInternTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E161CFCA2303ABFC00EE7045 /* GrubityInternUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E161CFDA2303ABFC00EE7045 /* Build configuration list for PBXNativeTarget "GrubityInternUITests" */;
+			buildPhases = (
+				E161CFC72303ABFC00EE7045 /* Sources */,
+				E161CFC82303ABFC00EE7045 /* Frameworks */,
+				E161CFC92303ABFC00EE7045 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E161CFCD2303ABFC00EE7045 /* PBXTargetDependency */,
+			);
+			name = GrubityInternUITests;
+			productName = GrubityInternUITests;
+			productReference = E161CFCB2303ABFC00EE7045 /* GrubityInternUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E161CFA42303ABFA00EE7045 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = DUY;
+				TargetAttributes = {
+					E161CFAB2303ABFA00EE7045 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					E161CFBF2303ABFC00EE7045 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = E161CFAB2303ABFA00EE7045;
+					};
+					E161CFCA2303ABFC00EE7045 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = E161CFAB2303ABFA00EE7045;
+					};
+				};
+			};
+			buildConfigurationList = E161CFA72303ABFA00EE7045 /* Build configuration list for PBXProject "GrubityIntern" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E161CFA32303ABFA00EE7045;
+			productRefGroup = E161CFAD2303ABFA00EE7045 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E161CFAB2303ABFA00EE7045 /* GrubityIntern */,
+				E161CFBF2303ABFC00EE7045 /* GrubityInternTests */,
+				E161CFCA2303ABFC00EE7045 /* GrubityInternUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E161CFAA2303ABFA00EE7045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D7ACEE2346FF760025AFD9 /* tomorrow.json in Resources */,
+				E14CE8692328F30C00D2B44E /* headerCell.xib in Resources */,
+				E161CFBA2303ABFC00EE7045 /* LaunchScreen.storyboard in Resources */,
+				E161CFB72303ABFC00EE7045 /* Assets.xcassets in Resources */,
+				E18A027123221DB600AE5B21 /* today.json in Resources */,
+				E147FB2E2357053C00922FE5 /* searchs.json in Resources */,
+				E1BB71892334BA7D00E1FC46 /* topRated.json in Resources */,
+				E1E9A7CE24BDA07E00098E54 /* GoogleService-Info.plist in Resources */,
+				E161CFB52303ABFA00EE7045 /* Main.storyboard in Resources */,
+				E15064112338D189001BFBAD /* weekend.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E161CFBE2303ABFC00EE7045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E161CFC92303ABFC00EE7045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FABBA81E00886034A86646A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrubityIntern-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E161CFBC2303ABFC00EE7045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E161CFC52303ABFC00EE7045 /* GrubityInternTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E161CFC72303ABFC00EE7045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E161CFD02303ABFC00EE7045 /* GrubityInternUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E16C969F24C3417300C9E44D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E16C96BA24C3423200C9E44D /* AppDelegate.swift in Sources */,
+				E16C96A024C341CA00C9E44D /* Post.swift in Sources */,
+				E16C96A124C341CA00C9E44D /* User.swift in Sources */,
+				E16C96A224C341CA00C9E44D /* todayData.swift in Sources */,
+				E16C96A324C341CA00C9E44D /* CollectionCellData.swift in Sources */,
+				E16C96A424C341CA00C9E44D /* weekendData.swift in Sources */,
+				E16C96A524C341CA00C9E44D /* tomorrowData.swift in Sources */,
+				E16C96A624C341CA00C9E44D /* searchData.swift in Sources */,
+				E16C96A724C341CA00C9E44D /* CellCollectionView.swift in Sources */,
+				E16C96A824C341CA00C9E44D /* CustomCollectionViewCell.swift in Sources */,
+				E16C96A924C341CA00C9E44D /* CustomCell.swift in Sources */,
+				E16C96AA24C341CA00C9E44D /* RatingControl.swift in Sources */,
+				E16C96AB24C341CA00C9E44D /* CustomTextField.swift in Sources */,
+				E16C96AC24C341CA00C9E44D /* CustomView.swift in Sources */,
+				E16C96AD24C341CA00C9E44D /* RoundButton.swift in Sources */,
+				E16C96AE24C341CA00C9E44D /* headerView.swift in Sources */,
+				E16C96AF24C341CA00C9E44D /* TomorrowCell.swift in Sources */,
+				E16C96BE24C3576100C9E44D /* OnlineUserTableViewController.swift in Sources */,
+				E16C96B024C341CA00C9E44D /* TomorrowTableViewCell.swift in Sources */,
+				E16C96B124C341CA00C9E44D /* CelebCollectionViewCell.swift in Sources */,
+				E16C96B224C341CA00C9E44D /* CelebTableViewCell.swift in Sources */,
+				E16C96B324C341CA00C9E44D /* SearchTableViewCell.swift in Sources */,
+				E16C96B424C341CA00C9E44D /* NewsFeedViewController.swift in Sources */,
+				E16C96B524C341CA00C9E44D /* SignInViewController.swift in Sources */,
+				E16C96B624C341CA00C9E44D /* WelcomeViewController.swift in Sources */,
+				E16C96B724C341CA00C9E44D /* SearchViewController.swift in Sources */,
+				E16C96B824C341CA00C9E44D /* SignUpViewController.swift in Sources */,
+				E16C96B924C341CA00C9E44D /* TabbarViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E161CFC22303ABFC00EE7045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E161CFAB2303ABFA00EE7045 /* GrubityIntern */;
+			targetProxy = E161CFC12303ABFC00EE7045 /* PBXContainerItemProxy */;
+		};
+		E161CFCD2303ABFC00EE7045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E161CFAB2303ABFA00EE7045 /* GrubityIntern */;
+			targetProxy = E161CFCC2303ABFC00EE7045 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E161CFB32303ABFA00EE7045 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E161CFB42303ABFA00EE7045 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E161CFB82303ABFC00EE7045 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E161CFB92303ABFC00EE7045 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E161CFD22303ABFC00EE7045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E161CFD32303ABFC00EE7045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E161CFD52303ABFC00EE7045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D63DDD21EA72A12A96ACFD /* Pods-GrubityIntern.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GrubityIntern/GrubityIntern.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7X3D98TXTN;
+				INFOPLIST_FILE = GrubityIntern/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GrubityIntern;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E161CFD62303ABFC00EE7045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF88353E9FD8B3526DA3B14C /* Pods-GrubityIntern.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GrubityIntern/GrubityIntern.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7X3D98TXTN;
+				INFOPLIST_FILE = GrubityIntern/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GrubityIntern;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E161CFD82303ABFC00EE7045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrubityInternTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GrubityInternTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrubityIntern.app/GrubityIntern";
+			};
+			name = Debug;
+		};
+		E161CFD92303ABFC00EE7045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrubityInternTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GrubityInternTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrubityIntern.app/GrubityIntern";
+			};
+			name = Release;
+		};
+		E161CFDB2303ABFC00EE7045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrubityInternUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GrubityInternUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrubityIntern;
+			};
+			name = Debug;
+		};
+		E161CFDC2303ABFC00EE7045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrubityInternUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GrubityInternUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrubityIntern;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E161CFA72303ABFA00EE7045 /* Build configuration list for PBXProject "GrubityIntern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E161CFD22303ABFC00EE7045 /* Debug */,
+				E161CFD32303ABFC00EE7045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E161CFD42303ABFC00EE7045 /* Build configuration list for PBXNativeTarget "GrubityIntern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E161CFD52303ABFC00EE7045 /* Debug */,
+				E161CFD62303ABFC00EE7045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E161CFD72303ABFC00EE7045 /* Build configuration list for PBXNativeTarget "GrubityInternTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E161CFD82303ABFC00EE7045 /* Debug */,
+				E161CFD92303ABFC00EE7045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E161CFDA2303ABFC00EE7045 /* Build configuration list for PBXNativeTarget "GrubityInternUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E161CFDB2303ABFC00EE7045 /* Debug */,
+				E161CFDC2303ABFC00EE7045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E161CFA42303ABFA00EE7045 /* Project object */;
+}

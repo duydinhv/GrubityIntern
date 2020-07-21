@@ -35,7 +35,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        self.present(UINavigationController(rootViewController: NewsFeedController()), animated: true, completion: nil)
+        self.present(UINavigationController(rootViewController: NewsFeedViewController()), animated: true, completion: nil)
     }
     func filterContentForSearchText(_ searchText: String, category: Search.category? = nil) {
         filteredSearch =  searchs.filter { (search: Search) -> Bool in
